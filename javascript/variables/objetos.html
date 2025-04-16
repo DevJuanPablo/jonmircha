@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clases</title>
+</head>
+<body>
+  
+  <script>
+    const objetoA = {
+
+    }
+
+    // forma deprecada de objeto
+    const b = new Object()
+
+    const persona = {
+      nombre: 'Juan Pablo',
+      apellido: 'Ortiz',
+      edad: 35,
+      pasatiempos: ['programar', 'Leer', 'futbol'],
+      estadoCivil: 'divorciado',
+      contacto: {
+        email: 'pablo@mail.com',
+        telefono: '12345678'
+      },
+      saludar: function() {
+        console.log('Hola')
+      },
+      decirMiNombre: function() {
+        console.log(`Hola, mi nombres es ${this.nombre} ${this.apellido}`)
+      }
+
+    }
+
+    // se puede acceder con la notacion corchete objeto['atributo'] o con la notacion punto objeto.atributo
+    console.log(persona['nombre'])
+    console.log(persona.apellido)
+  </script>
+</body>
+</html>
