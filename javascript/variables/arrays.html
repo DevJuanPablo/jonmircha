@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+<body>
+  
+  <script>
+    // Formas de declarar un array
+    const a = []
+    const b = [1, true, 'Hola Mundo', ['A', 'B', 'C']]
+
+    const c = Array.of('X', 'Y', 'Z', 9, 8, 7)
+
+    const d = Array(100).fill(false)
+
+    // practicas obsoletas para declarar un array
+    const e = new Array(1, 2, 3, 4, 5)
+
+    // algunas propiedades y metodos
+    const colores = ['rojo', 'verde', 'azul']
+    colores.push('negro')
+
+    colores.forEach(function(elemento, indice) {
+      console.log(`<li id="${indice}">${elemento}</li>`)
+    })
+  </script>
+</body>
+</html>
