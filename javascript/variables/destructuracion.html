@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuracion</title>
+</head>
+<body>
+  <script>
+    // Destructuracion de arreglos
+    const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    const [uno, dos, tres] = numeros
+    console.log(uno, dos, tres) // 1 2 3
+
+    // Destructuracion de objetos
+    const persona = {
+      nombre: 'Juan',
+      apellido: 'Pérez',
+      edad: 30,
+      ciudad: 'Madrid'
+    }
+
+    const { nombre, apellido, edad } = persona
+    console.log(nombre, apellido, edad) // Juan Pérez 30
+  </script>
+</body>
+</html>
