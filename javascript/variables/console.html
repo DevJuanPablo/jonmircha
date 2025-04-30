@@ -47,6 +47,17 @@
     }
 
     console.table(perro)
+    console.clear()
+
+    // calculo del tiempo de ejecucion
+    console.time('Tiempo de ejecución')
+      const arreglo = Array(1000000)
+
+      for (let i = 0; i < arreglo.length; i++) {
+        arreglo[i] = i
+      }
+
+    console.timeEnd('Tiempo de ejecución')
   </script>
 </body>
 </html>
