@@ -20,9 +20,19 @@
       (!cadena) 
         ? console.warn('No ingresaste ninguna cadena')
         : console.info(`La cadena "${cadena}" tiene ${cadena.length} caracteres`)
-    
-    
-      }
+    }
+
+    /*
+    * Ejercicio 2: Programa una función que te devuelva el texto recortado según el número
+    * de caracteres indicados. pe: miFuncion('Hola Mundo', 4) devolverá 'Hola'
+    */
+    recortarTexto = (cadena = '', longitud = undefined) => {
+      (!cadena)
+        ? console.warn('No ingresaste ninguna cadena')
+        : (longitud === undefined)
+          ? console.warn('No ingresaste la longitud')
+          : console.info(`La cadena recortada es: "${cadena.slice(0, longitud)}"`)
+    }
   </script>
 </body>
 </html>
